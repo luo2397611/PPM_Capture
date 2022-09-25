@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"ppm_capture\startup_stm32f103xe.o"
+"ppm_capture\main.o"
+"ppm_capture\gpio.o"
+"ppm_capture\tim.o"
+"ppm_capture\usart.o"
+"ppm_capture\stm32f1xx_it.o"
+"ppm_capture\stm32f1xx_hal_msp.o"
+"ppm_capture\ppm.o"
+"ppm_capture\stm32f1xx_hal_gpio_ex.o"
+"ppm_capture\stm32f1xx_hal_tim.o"
+"ppm_capture\stm32f1xx_hal_tim_ex.o"
+"ppm_capture\stm32f1xx_hal.o"
+"ppm_capture\stm32f1xx_hal_rcc.o"
+"ppm_capture\stm32f1xx_hal_rcc_ex.o"
+"ppm_capture\stm32f1xx_hal_gpio.o"
+"ppm_capture\stm32f1xx_hal_dma.o"
+"ppm_capture\stm32f1xx_hal_cortex.o"
+"ppm_capture\stm32f1xx_hal_pwr.o"
+"ppm_capture\stm32f1xx_hal_flash.o"
+"ppm_capture\stm32f1xx_hal_flash_ex.o"
+"ppm_capture\stm32f1xx_hal_exti.o"
+"ppm_capture\stm32f1xx_hal_uart.o"
+"ppm_capture\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "PPM_Capture\PPM_Capture.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PPM_Capture.map" -o PPM_Capture\PPM_Capture.axf
